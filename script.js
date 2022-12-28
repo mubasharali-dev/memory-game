@@ -17,6 +17,7 @@ function flipCard() {
   secondCard = this;
   checkForMatch();
 }
+
 function checkForMatch() {
   let isMatch = firstCard.dataset.framework == secondCard.dataset.framework;
 
