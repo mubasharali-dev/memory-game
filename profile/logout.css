@@ -1,0 +1,40 @@
+.container {
+  padding: 10px;
+  margin: 5px;
+  font-size: 20px;
+  position: absolute;
+  outline: 1px solid black;
+}
+
+button {
+  /* display: flex; */
+  /* flex-direction: row; */
+  border-radius: 50px;
+  background-color: rgb(17, 30, 223);
+  color: white;
+  margin-top: 2px;
+  padding: 12px;
+  outline: none;
+  border: 0;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: rgb(17, 30, 223);
+  outline: 1px solid black;
+}
+
+i {
+  padding: 10px;
+  margin: 4px;
+  color: rgb(17, 30, 223);
+  cursor: pointer;
+}
+
+i:hover {
+  cursor: pointer;
+  color: white;
+  background-color: rgb(17, 30, 223);
+  border-radius: 10px;
+}

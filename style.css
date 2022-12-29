@@ -9,6 +9,56 @@ body {
   display: flex;
   font-family: "Times New Roman", Times, serif;
 }
+/* Dropdown buttons  */
+
+.dropbtn {
+  background-color: #04aa6d;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  margin-right: 20px;
+  padding-right: 1rem;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+.notification {
+  min-width: 460px;
+}
+
+/* NAVBAR  */
+
 .navbar-brand {
   display: flex;
   align-items: center;
@@ -27,6 +77,8 @@ body {
   height: 40px;
   margin-left: 10px;
 }
+
+/* RIGHT SIDEBAR STYLING OF VIDEO AND CONTENT  */
 
 .right-sidebar {
   display: flex;
@@ -61,6 +113,9 @@ video {
   padding: 4px;
   width: 400px;
 }
+
+/* GAME CARD STYLING  */
+
 .memory-game {
   width: 640px;
   height: 640px;
@@ -128,6 +183,8 @@ video {
 .avatar:hover {
   cursor: pointer;
 }
+
+/* MEDIA QUERIES FOR RESPONSIVENESS */
 
 @media only screen and (max-width: 600px) {
   .memory-game {

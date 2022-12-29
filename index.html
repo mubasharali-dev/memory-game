@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -80,60 +81,60 @@
               data-target="#collapseExample"
             >
               <a
-                href="#"
+                href="pages/home.html"
                 class="list-group-item list-group-item-action py-2 ripple active"
               >
                 <i class="fas fa-chart-area fa-fw me-3"></i>
                 <span>Home</span>
               </a>
               <a
-                href="#"
+                href="pages/features.html"
                 class="list-group-item list-group-item-action py-2 ripple"
                 ><i class="fas fa-lock fa-fw me-3"></i> <span>Features</span></a
               >
               <a
-                href="#"
+                href="pages/scores.html"
                 class="list-group-item list-group-item-action py-2 ripple"
                 ><i class="fa-solid fa-star fa-fw me-3"></i>
                 <span>Scores</span></a
               >
               <a
-                href="#"
+                href="pages/previousgames.html"
                 class="list-group-item list-group-item-action py-2 ripple"
               >
                 <i class="fa-solid fa-gamepad fa-fw me-3"></i>
                 <span>Previous Games</span>
               </a>
               <a
-                href="#"
+                href="pages/cards.html"
                 class="list-group-item list-group-item-action py-2 ripple"
                 ><i class="fas fa-chart-bar fa-fw me-3"></i>
                 <span>Cards</span></a
               >
               <a
-                href="#"
+                href="pages/share.html"
                 class="list-group-item list-group-item-action py-2 ripple"
                 ><i class="fas fa-globe fa-fw me-3"></i> <span>Share</span></a
               >
               <a
-                href="#"
+                href="pages/buypremium.html"
                 class="list-group-item list-group-item-action py-2 ripple"
                 ><i class="fa-solid fa-cart-shopping fa-fw me-3"></i>
                 <span>Buy Premium</span></a
               >
               <a
-                href="#"
+                href="pages/spin.html"
                 class="list-group-item list-group-item-action py-2 ripple"
                 ><i class="fa-solid fa-spinner fa-fw me-3"></i>
                 <span>Spin</span></a
               >
               <a
-                href="#"
+                href="pages/users.html"
                 class="list-group-item list-group-item-action py-2 ripple"
                 ><i class="fas fa-users fa-fw me-3"></i> <span>Users</span></a
               >
               <a
-                href="#"
+                href="pages/help.html"
                 class="list-group-item list-group-item-action py-2 ripple"
                 ><i class="fa-solid fa-question fa-fw me-3"></i>
                 <span>Help</span></a
@@ -158,13 +159,13 @@
             <div class="play-guide">
               <h5>How to play?</h5>
               <p class="lead">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Inventore enim praesentium quis amet error quibusdam perferendis
-                sit voluptate.
+                This matching game is about to match 2 cards of same images from
+                24 cards. All the cards are hidden by a same Image card.
               </p>
               <p class="lead">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Voluptas beatae dolores deserunt architecto obcaecati itaque,
+                Click the card and search for that same second card from entire
+                list. If two cards are not same, those cards will flip back
+                again and the loop will continues.
               </p>
             </div>
           </div>
@@ -206,16 +207,32 @@
           <ul class="navbar-nav ms-auto d-flex flex-row">
             <!-- Icon -->
 
+            <div class="dropdown">
             <li class="nav-item me-2 px-0 me-lg-0 d-none d-sm-block">
               <a class="nav-link" href="#">
                 <i class="fa-solid fa-bell"></i>
               </a>
             </li>
+            <div class="dropdown-content notification" style="right: 0">
+              <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, culpa?</a>
+              <hr/>
+              <a href="#">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione necessitatibus, neque suscipit in voluptate eum.</a>
+              <hr/>
+              <a href="#">Lorem ipsum dolor sit amet.</a>
+              <hr/>
+              
+              <a href="#">Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint voluptate atque labore aspernatur?</a>
+              <hr/>
+
+            </div>
+          </div>
 
             <!-- Avatar -->
-            <li class="nav-item dropdown px-2 py-1 avatar">
-              <a>
-                <img
+           
+            <div class="dropdown">
+              <li class="nav-item dropdown px-2 py-1 avatar">
+                <a>
+                  <img
                   src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (32).webp"
                   class="rounded-circle"
                   height="30"
@@ -224,8 +241,13 @@
                 />
               </a>
             </li>
-          </ul>
-        </div>
+            <div class="dropdown-content" style="right: 0">
+              <a href="profile/account.html">Account</a>
+              <a href="profile/personalinfo.html">Personal Information</a>
+              <a href="profile/logout.html">Logout</a>
+            </div>
+          </div>
+        </ul>
         <!-- Container wrapper -->
       </nav>
       <!-- Navbar -->
