@@ -53,6 +53,7 @@ body {
 .dropdown:hover .dropbtn {
   background-color: #3e8e41;
 }
+
 .notification {
   min-width: 460px;
 }
