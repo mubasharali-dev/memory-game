@@ -1,0 +1,30 @@
+.container {
+  padding: 1rem;
+  margin: 0.5rem;
+  width: 680px;
+}
+h1 {
+  color: rgb(17, 30, 223);
+  cursor: pointer;
+}
+
+.lead {
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: rgb(17, 30, 223);
+}
+
+img {
+  display: flex;
+  justify-content: flex-end;
+  width: 600px;
+  flex-direction: column;
+  float: right;
+  position: absolute;
+  left: 800px;
+  margin-left: auto;
+  top: 80px;
+}
