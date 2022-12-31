@@ -57,6 +57,13 @@ body {
 .notification {
   min-width: 460px;
 }
+.notification-heading {
+  padding-top: 10px;
+  padding-left: 15px;
+  margin-right: 12px;
+  color: rgb(17, 30, 223);
+  transform: scale(1);
+}
 
 /* NAVBAR  */
 
