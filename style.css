@@ -196,6 +196,7 @@ video {
 
 @media only screen and (max-width: 600px) {
   .memory-game {
+    padding-top: 100px;
     width: 470px;
     height: 600px;
     margin: auto;
@@ -215,6 +216,7 @@ video {
     transform: scale(0.97);
     transition: transform 0.2s;
   }
+
   .front-face,
   .back-face {
     width: 100%;
@@ -230,31 +232,34 @@ video {
     padding-right: 10px;
     background-color: red;
     outline: none;
+    display: block;
   }
+
   .content {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 450px;
-    flex-direction: column;
-    float: inline-end;
+    display: none;
+  }
+  .navbar-brand img {
+    margin-right: 16rem;
+    /* background-color: blue; */
+  }
+  .navbar-brand h4 {
+    display: block;
+  }
+  .login-pic {
+    /* color: red; */
+    /* width: 100px; */
+    /* border: 1px solid green; */
     position: relative;
-    right: 1040px;
-    /* margin-left: auto; */
-    top: 650px;
-    margin-left: 45px;
   }
-  .video-guide h5 {
+  .nav-item img {
+    /* background-color: red; */
+    /* padding: 1rem; */
+    top: -110px;
+    right: 10px;
+    position: absolute;
+    float: right;
   }
-  .content video {
-    width: 260px;
-    height: 150px;
-    display: flex;
-    align-items: center;
-    align-self: center;
-    /* margin-left: 45px; */
-  }
-  .lead {
-    width: 260px;
+  .nav-link {
+    display: none;
   }
 }

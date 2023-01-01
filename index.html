@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <link rel="stylesheet" href="style.css" />
 
     <link
@@ -54,32 +55,16 @@
     <header>
       <!-- Sidebar -->
       <nav
-        id="sidebarMenu"
-        class="collapse d-lg-block sidebar collapse bg-white"
-      >
-        <div class="position-sticky">
-          <div class="list-group list-group-flush mx-3 mt-4">
-            <a
-              href="#"
-              class="hidden menu visible-xs d-block d-sm-none"
-              type="link"
-              href="#collapseExample"
-              data-toggle="collapse"
-              data-target="#collapseExample"
-              aria-expanded="false"
-              aria-controls="collapseExample"
-            >
-              <i
-                class="fa-solid fa-bars menu-bar collapse dont-collapse-sm d-block d-sm-none"
-                id="menubar"
-              ></i>
-            </a>
-            <div
-              class="collpase"
-              id="collapseExample"
-              data-toggle="collapse"
-              data-target="#collapseExample"
-            >
+      id="sidebarMenu"
+      class="collapse d-lg-block sidebar collapse bg-white"
+    >
+      <div class="position-sticky">
+        <div class="list-group list-group-flush mx-3 mt-4">
+          <div
+            class="collapse show"
+            id="collapseExample"
+          >
+         
               <a
                 href="pages/home.html"
                 class="list-group-item list-group-item-action py-2 ripple active"
@@ -181,19 +166,14 @@
         <!-- Container wrapper -->
         <div class="container-fluid">
           <!-- Toggle button -->
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-mdb-toggle="collapse"
-            data-mdb-target="#sidebarMenu"
-            aria-controls="sidebarMenu"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+          <p>
+          <a class="bg-light mt-2 show d-lg-none d-sm-block" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
             <i class="fa-solid fa-bars"></i>
-          </button>
+          </a>
+        </p>
 
-          <!-- Brand -->
+          <!-- Navbar Items -->
+        
           <div>
             <a class="navbar-brand text-dark py-2" href="#">
               <img src="img/js-badge.svg" alt="js-badge" />
@@ -210,7 +190,7 @@
             <!-- Icon -->
 
             <div class="dropdown">
-            <li class="nav-item me-2 px-0 me-lg-0 d-none d-sm-block">
+            <li class="nav-item me-2 px-0 me-lg-0  d-none d-sm-block">
               <a class="nav-link" href="#">
                 <i class="fa-solid fa-bell"></i>
               </a>
@@ -233,12 +213,12 @@
 
             <!-- Avatar -->
            
-            <div class="dropdown">
+            <div class="dropdown login-pic">
               <li class="nav-item dropdown px-2 py-1 avatar">
                 <a>
                   <img
                   src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (32).webp"
-                  class="rounded-circle"
+                  class="rounded-circle nav-img"
                   height="30"
                   alt="Avatar"
                   loading="lazy"
@@ -254,8 +234,6 @@
           </div>
         </ul>
 
-        <!-- dummy -->
-      
         <!-- Container wrapper -->
       </nav>
       <!-- Navbar -->
