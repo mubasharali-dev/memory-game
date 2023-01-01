@@ -2,19 +2,29 @@
   padding: 10px;
   margin: 5px;
   font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 40%;
+  left: 40%;
+  transform: translate(0, -50%);
   position: absolute;
   outline: 1px solid black;
 }
 
+span {
+  display: flex;
+  flex-direction: row;
+}
 button {
-  /* display: flex; */
-  /* flex-direction: row; */
-  border-radius: 50px;
+  border-radius: 20px;
   background-color: rgb(17, 30, 223);
   color: white;
-  margin-top: 2px;
+  margin: 5px;
   padding: 12px;
   outline: none;
+  position: relative;
+  align-items: center;
   border: 0;
 }
 
@@ -23,18 +33,4 @@ button:hover {
   background-color: white;
   color: rgb(17, 30, 223);
   outline: 1px solid black;
-}
-
-i {
-  padding: 10px;
-  margin: 4px;
-  color: rgb(17, 30, 223);
-  cursor: pointer;
-}
-
-i:hover {
-  cursor: pointer;
-  color: white;
-  background-color: rgb(17, 30, 223);
-  border-radius: 10px;
 }

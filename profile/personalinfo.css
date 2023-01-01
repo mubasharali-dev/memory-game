@@ -1,8 +1,14 @@
 .container {
   padding: 5px;
   margin: 8px;
-  /* display: flex; */
+  display: flex;
+  flex-direction: column;
   position: absolute;
+  font-size: 16px;
+  top: 50%;
+  left: 38%;
+  transform: translate(0, -50%);
+  /* align-items: flex-start; */
   align-items: center;
   justify-content: center;
 }
@@ -40,4 +46,58 @@ button:hover {
   background-color: white;
   color: rgb(17, 30, 223);
   outline: 1px solid black;
+}
+
+@media only screen and (max-width: 576px) {
+  .container {
+    font-size: 12px;
+    top: 80%;
+    padding: 1rem;
+    margin-right: 1rem;
+    right: 9rem;
+  }
+  h1 {
+    font-size: 14x;
+  }
+  h4 {
+    display: flex;
+    align-items: flex-start;
+    right: 10rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    font-size: 16px;
+    top: 45%;
+    padding: 1rem;
+    margin-right: 10rem;
+    right: 9rem;
+  }
+  h1 {
+    font-size: 14px;
+  }
+  h4 {
+    display: flex;
+    align-items: flex-start;
+    right: 10rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .container {
+    font-size: 20px;
+    top: 50%;
+    padding: 1rem;
+    margin-right: 13rem;
+    right: 9rem;
+  }
+  h1 {
+    font-size: 16px;
+  }
+  h4 {
+    display: flex;
+    align-items: flex-start;
+    right: 10rem;
+  }
 }

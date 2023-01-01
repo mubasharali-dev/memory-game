@@ -1,37 +1,230 @@
-.container {
-  padding-left: 10px;
-  margin-right: 10px;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-h1 {
-  padding: 6px;
-  margin-top: 3px;
-  color: rgb(17, 30, 223);
+body {
+  height: 100vh;
+  display: flex;
+  font-family: "Times New Roman", Times, serif;
 }
+/* Dropdown buttons  */
 
-h1:hover {
-  cursor: pointer;
-  color: rgb(117, 118, 112);
+.content {
+  margin-top: 100px;
+  margin-left: 200px;
+  padding-left: 100px;
+  height: 1000px;
 }
-h4 {
-  font-weight: bold;
-  font-size: 18px;
-}
-h4:hover {
-  cursor: pointer;
-}
-button {
-  cursor: pointer;
-  border-radius: 20px;
-  background-color: rgb(17, 30, 223);
+.dropbtn {
+  background-color: #04aa6d;
   color: white;
-  padding: 12px;
-  outline: none;
-  border: 0;
-  margin: 4px;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
 }
-button:hover {
-  background-color: white;
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  margin-right: 20px;
+  padding-right: 1rem;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+.notification {
+  min-width: 460px;
+}
+.notification-heading {
+  padding-top: 10px;
+  padding-left: 15px;
+  margin-right: 12px;
   color: rgb(17, 30, 223);
-  outline: 1px solid black;
+  transform: scale(1);
+}
+
+/* NAVBAR  */
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.navbar-brand h4 {
+  margin-top: 4px;
+  margin-left: 525px;
+  font-weight: bold;
+  font-size: 25px;
+  color: rgb(17, 30, 223);
+}
+.navbar-brand img {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+}
+
+/* RIGHT SIDEBAR STYLING OF VIDEO AND CONTENT  */
+
+.sidebar {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+
+.avatar:hover {
+  cursor: pointer;
+}
+.content {
+  /* display: flex;
+  flex-direction: column;
+  flex-direction: wrap;
+  left: 1000px;
+  top: 20px;
+  padding-left: 5rem;
+  margin-top: 5rem; */
+}
+
+/* MEDIA QUERIES FOR RESPONSIVENESS */
+
+/* @media only screen and (max-width: 600px) {
+  #menubar {
+    padding-right: 10px;
+    background-color: red;
+    outline: none;
+    display: block;
+  }
+
+  .content {
+    display: none;
+  }
+  .navbar-brand img {
+    margin-right: 15.6rem;
+  }
+  .navbar-brand h4 {
+    display: block;
+    position: absolute;
+    font-size: 14px;
+    margin-right: 5px;
+    margin-left: 500px;
+    margin-bottom: 110px;
+  }
+  .login-pic {
+    position: relative;
+  }
+  .nav-item img {
+    position: sticky;
+    float: right;
+  }
+  .nav-link {
+    display: none;
+  }
+  .container-fluid p {
+    padding-left: 5px;
+    margin-left: 5px;
+    color: black;
+  }
+
+  .dropdown-content {
+    left: -280px;
+  }
+  .notification a {
+    position: sticky;
+    font-size: 12px;
+  }
+  .notification {
+    min-width: 260px;
+  }
+  .notification-heading {
+    padding-top: 10px;
+    padding-left: 15px;
+    margin-right: 12px;
+    color: rgb(17, 30, 223);
+    transform: scale(1);
+    font-size: 16px;
+  }
+
+  .container {
+    display: none;
+  }
+} */
+
+@media screen and (min-width: 576px) {
+  #sidebarMenu a {
+    text-align: center;
+    float: none;
+    /* width: 100px; */
+  }
+  .content {
+    font-size: 1rem;
+    /* position: absolute; */
+    padding-left: 0;
+    padding-left: 0;
+    padding-right: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  #sidebarMenu {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  #sidebarMenu a {
+    float: left;
+  }
+
+  .content {
+    margin-left: 0;
+    margin-right: 2rem;
+    /* padding-right: 1rem; */
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #sidebarMenu {
+    margin: 0;
+    margin-top: 1.5rem;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  #sidebarMenu a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
 }
