@@ -239,21 +239,15 @@ video {
     display: none;
   }
   .navbar-brand img {
-    margin-right: 16rem;
-    /* background-color: blue; */
+    margin-right: 18.5rem;
   }
   .navbar-brand h4 {
     display: block;
   }
   .login-pic {
-    /* color: red; */
-    /* width: 100px; */
-    /* border: 1px solid green; */
     position: relative;
   }
   .nav-item img {
-    /* background-color: red; */
-    /* padding: 1rem; */
     top: -110px;
     right: 10px;
     position: absolute;
@@ -261,5 +255,10 @@ video {
   }
   .nav-link {
     display: none;
+  }
+  .container-fluid p {
+    padding-left: 5px;
+    margin-left: 5px;
+    color: black;
   }
 }
