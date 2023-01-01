@@ -1,4 +1,4 @@
 # memory-game
-Live Link you Memory Matching Game:
+Live Link of Memory Matching Game:
 
 https://memory-game-vanila-js.netlify.app/
