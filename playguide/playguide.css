@@ -32,9 +32,9 @@ img {
 
 @media only screen and (max-width: 600px) {
   .container {
-    width: 300px;
-    line-height: 1.7;
-  }
-  img {
-    display: none;
+  width: 300px;
+  line-height: 1.7;
+}
+img {
+  display: none;
 }

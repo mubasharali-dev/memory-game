@@ -239,18 +239,21 @@ video {
     display: none;
   }
   .navbar-brand img {
-    margin-right: 18.5rem;
+    margin-right: 15.6rem;
   }
   .navbar-brand h4 {
     display: block;
+    position: absolute;
+    font-size: 14px;
+    margin-right: 5px;
+    margin-left: 500px;
+    margin-bottom: 110px;
   }
   .login-pic {
     position: relative;
   }
   .nav-item img {
-    top: -110px;
-    right: 10px;
-    position: absolute;
+    position: sticky;
     float: right;
   }
   .nav-link {
@@ -260,5 +263,24 @@ video {
     padding-left: 5px;
     margin-left: 5px;
     color: black;
+  }
+
+  .dropdown-content {
+    left: -280px;
+  }
+  .notification a {
+    position: sticky;
+    font-size: 12px;
+  }
+  .notification {
+    min-width: 260px;
+  }
+  .notification-heading {
+    padding-top: 10px;
+    padding-left: 15px;
+    margin-right: 12px;
+    color: rgb(17, 30, 223);
+    transform: scale(1);
+    font-size: 16px;
   }
 }
