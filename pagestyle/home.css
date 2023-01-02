@@ -11,12 +11,6 @@ body {
 }
 /* Dropdown buttons  */
 
-.content {
-  margin-top: 100px;
-  margin-left: 200px;
-  padding-left: 100px;
-  height: 1000px;
-}
 .dropbtn {
   background-color: #04aa6d;
   color: white;
@@ -80,8 +74,8 @@ body {
   flex-direction: row;
 }
 .navbar-brand h4 {
-  margin-top: 4px;
-  margin-left: 525px;
+  margin-top: 5rem;
+  margin-left: 50rem;
   font-weight: bold;
   font-size: 25px;
   color: rgb(17, 30, 223);
@@ -92,30 +86,88 @@ body {
   margin-left: 10px;
 }
 
-/* RIGHT SIDEBAR STYLING OF VIDEO AND CONTENT  */
-
+.list-group-item {
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  width: 100%;
+  height: auto;
+  padding: 8px;
+  margin-right: 70px;
+  margin-top: 15px;
+}
+.nav-link:hover {
+  color: #b72020;
+}
 .sidebar {
   display: flex;
   flex-direction: row;
-  margin-top: 50px;
+  margin-top: 22px;
+  /* margin: 0; */
+  padding: 0;
+  width: 200px;
+  /* background-color: #f1f1f1; */
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
 }
 
 .avatar:hover {
   cursor: pointer;
 }
 .content {
-  /* display: flex;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
   flex-direction: column;
-  flex-direction: wrap;
-  left: 1000px;
-  top: 20px;
-  padding-left: 5rem;
-  margin-top: 5rem; */
+  left: 10rem;
+  top: 0;
+  bottom: 50rem;
+  margin-bottom: 20rem;
+  /* margin-top: 20px; */
+  margin-left: 40em;
+  padding: 50px 16px;
+  height: 100rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+.content h1 {
+  padding: 0.2em;
+  margin: 1em 0 0 0;
+}
+table {
+  outline: 1px solid black;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  /* position: relative; */
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 0.5em;
+  /* color: blue; */
+}
+
+tr:nth-child(odd) {
+  background-color: #dddddd;
 }
 
 /* MEDIA QUERIES FOR RESPONSIVENESS */
 
-/* @media only screen and (max-width: 600px) {
+@media only screen and (min-width: 576px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
   #menubar {
     padding-right: 10px;
     background-color: red;
@@ -123,9 +175,61 @@ body {
     display: block;
   }
 
-  .content {
+  .navbar-brand img {
+    margin-right: 15.6rem;
+  }
+  .navbar-brand h4 {
+    display: block;
+    position: absolute;
+    font-size: 1.5rem;
+    /* margin-right: 2px; */
+    margin-left: calc(25em + 20%);
+    margin-bottom: 3.5em;
+  }
+
+  .login-pic {
+    position: relative;
+  }
+  .nav-item img {
+    position: sticky;
+    float: right;
+  }
+  .nav-link {
     display: none;
   }
+  .container-fluid p {
+    padding-left: 5px;
+    margin-left: 5px;
+    color: black;
+  }
+
+  .dropdown-content {
+    left: -280px;
+  }
+  .notification a {
+    position: sticky;
+    font-size: 12px;
+  }
+  .notification {
+    min-width: 260px;
+  }
+  .notification-heading {
+    padding-top: 10px;
+    padding-left: 15px;
+    margin-right: 12px;
+    color: rgb(17, 30, 223);
+    transform: scale(1);
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+  #menubar {
+    padding-right: 10px;
+    background-color: red;
+    outline: none;
+    display: block;
+  }
+
   .navbar-brand img {
     margin-right: 15.6rem;
   }
@@ -133,9 +237,10 @@ body {
     display: block;
     position: absolute;
     font-size: 14px;
-    margin-right: 5px;
-    margin-left: 500px;
-    margin-bottom: 110px;
+    margin-right: 7rem;
+    margin-top: 5rem;
+    /* margin-left: 500px; */
+    /* margin-bottom: 110px; */
   }
   .login-pic {
     position: relative;
@@ -171,60 +276,15 @@ body {
     transform: scale(1);
     font-size: 16px;
   }
-
-  .container {
-    display: none;
-  }
-} */
-
-@media screen and (min-width: 576px) {
-  #sidebarMenu a {
-    text-align: center;
-    float: none;
-    /* width: 100px; */
-  }
-  .content {
-    font-size: 1rem;
-    /* position: absolute; */
-    padding-left: 0;
-    padding-left: 0;
-    padding-right: 1rem;
-  }
-}
-@media screen and (min-width: 768px) {
-  #sidebarMenu {
+  .sidebar {
     width: 100%;
     height: auto;
     position: relative;
   }
-  #sidebarMenu a {
+  .sidebar a {
     float: left;
   }
-
   .content {
     margin-left: 0;
-    margin-right: 2rem;
-    /* padding-right: 1rem; */
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  #sidebarMenu {
-    margin: 0;
-    margin-top: 1.5rem;
-    padding: 0;
-    width: 200px;
-    background-color: #f1f1f1;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-  }
-  #sidebarMenu a {
-    display: block;
-    color: black;
-    padding: 16px;
-    text-decoration: none;
   }
 }

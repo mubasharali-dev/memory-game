@@ -4,11 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- favicon -->
+    
+    <link rel="stylesheet" href="/pagestyle/features.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/97124093fb.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+      integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e"
+      crossorigin="anonymous"
+    />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="favicon/apple-touch-icon.png"
+      href="/favicon/apple-touch-icon.png"
     />
     <link
       rel="icon"
@@ -25,54 +48,196 @@
     <link rel="manifest" href="/favicon/site.webmanifest" />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
-    <link rel="stylesheet" href="/pagestyle/features.css" />
     <title>Memory Game</title>
   </head>
   <body>
-    <a href="features"> </a>
-    <div class="container">
-      <h1>Features</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum aperiam
-        eaque quidem natus pariatur quod nam voluptas, et porro ullam.
-      </p>
-      <h4>Single Player</h4>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est reiciendis
-        eligendi totam in eaque.
-      </p>
-      <h4>Play with bot</h4>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
-        facilis dolore eaque ipsam voluptate debitis harum quam? Labore at
-        mollitia laudanti.
-      </p>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum corporis
-        doloremque eveniet sit deleniti. A soluta nulla omnis commodi similique.
-      </p>
-      <h4>Add your score to socials</h4>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-        assumenda ullam nemo cum reiciendis.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-        assumenda ulla.
-      </p>
-      <h4>Earn Money by playing with friends</h4>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, nam?
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, nam?
-        Lorem ipsum dolor sit amet.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, nam?
-        Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
-      </p>
-      <button>Learn More...</button>
+    <!--Main Navigation-->
+    <header>
+      <!-- Sidebar -->
+      <nav
+      id="sidebarMenu"
+      class="collapse d-lg-block sidebar collapse bg-white"
+    >
+      <div class="position-fixed">
+        <div class="list-group list-group-flush mx-3 mt-4">
+          <div
+            class="collapse show"
+            id="collapseExample"
+          >
+         
+              <a
+                href="/pages/home.html"
+                class="list-group-item list-group-item-action py-2 ripple active"
+              >
+                <i class="fas fa-chart-area fa-fw me-3"></i>
+                <span>Home</span>
+              </a>
+              <a
+                href="/pages/features.html"
+                class="list-group-item list-group-item-action py-2 ripple"
+                ><i class="fas fa-lock fa-fw me-3"></i> <span>Features</span></a
+              >
+              <a
+                href="/pages/scores.html"
+                class="list-group-item list-group-item-action py-2 ripple"
+                ><i class="fa-solid fa-star fa-fw me-3"></i>
+                <span>Scores</span></a
+              >
+              <a
+                href="/pages/previousgames.html"
+                class="list-group-item list-group-item-action py-2 ripple"
+              >
+                <i class="fa-solid fa-gamepad fa-fw me-3"></i>
+                <span>Previous Games</span>
+              </a>
+              <a
+                href="/pages/cards.html"
+                class="list-group-item list-group-item-action py-2 ripple"
+                ><i class="fas fa-chart-bar fa-fw me-3"></i>
+                <span>Cards</span></a
+              >
+              <a
+                href="/pages/share.html"
+                class="list-group-item list-group-item-action py-2 ripple"
+                ><i class="fas fa-globe fa-fw me-3"></i> <span>Share</span></a
+              >
+              <a
+                href="/pages/buypremium.html"
+                class="list-group-item list-group-item-action py-2 ripple"
+                ><i class="fa-solid fa-cart-shopping fa-fw me-3"></i>
+                <span>Buy Premium</span></a
+              >
+              <a
+                href="/pages/spin.html"
+                class="list-group-item list-group-item-action py-2 ripple"
+                ><i class="fa-solid fa-spinner fa-fw me-3"></i>
+                <span>Spin</span></a
+              >
+              <a
+                href="/pages/users.html"
+                class="list-group-item list-group-item-action py-2 ripple"
+                ><i class="fas fa-users fa-fw me-3"></i> <span>Users</span></a
+              >
+              <a
+                href="/pages/help.html"
+                class="list-group-item list-group-item-action py-2 ripple"
+                ><i class="fa-solid fa-question fa-fw me-3"></i>
+                <span>Help</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Navbar -->
+      <nav
+        id="main-navbar"
+        class="navbar navbar-expand-lg text-dark bg-light py-0 fixed-top"
+      >
+        <!-- Container wrapper -->
+        <div class="container-fluid">
+          <!-- Toggle button -->
+          <p>
+          <a class="bg-light mt-2 show d-lg-none d-sm-block" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
+            <i class="fa-solid fa-bars" ></i>
+          </a>
+        </p>
+
+          <!-- Navbar Items -->
+        
+          <div>
+            <a class="navbar-brand text-dark py-2" href="/index.html">
+              <img src="/img/js-badge.svg" alt="js-badge" />
+            </a>
+          </div>
+          <div>
+            <a class="navbar-brand text-dark py-2" href="#">
+              <h4 class="ml-2 px-2 main-heading">Memory Matching Game</h4>
+            </a>
+          </div>
+
+          <!-- Right links -->
+          <ul class="navbar-nav ms-auto d-flex flex-row">
+            <!-- Icon -->
+
+            <div class="dropdown dropdown-notify">
+            <li class="nav-item me-2 px-0 me-lg-0 d-lg-block d-sm-none">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-bell"></i>
+              </a>
+            </li>
+            <div class="dropdown-content notification" style="right: 0">
+              <p class="notify-game">
+                <h3 class="notification-heading">Notifications</h3>
+                <hr/>
+                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, culpa?</a>
+                <hr/>
+                <a href="#">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione necessitatibus, neque suscipit in voluptate eum.</a>
+                <hr/>
+                <a href="#">Lorem ipsum dolor sit amet.</a>
+                <hr/>
+                
+                <a href="#">Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint voluptate atque labore aspernatur?</a>
+                <hr/>
+              </p>
+                
+            </div>
+          </div>
+
+          <!-- AVATAR  -->
+    <div class="dropdown login-pic">
+      <li class="nav-item dropdown px-2 py-1 avatar">
+        <a>
+          <img
+          src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (32).webp"
+          class="rounded-circle nav-img"
+          height="30"
+          alt="Avatar"
+          loading="lazy"
+        />
+      </a>
+    </li>
+    <div class="dropdown-content" style="right: 0">
+      <a href="/profile/account.html">Account</a>
+      <a href="/profile/personalinfo.html">Personal Information</a>
+      <a href="/profile/logout.html">Logout</a>
+      
     </div>
+  </div>
+</ul>
+
+<!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
+</header>
+  <div class="content">
+    <div id="liveAlertPlaceholder"></div>
+<button type="button" class="btn btn-info alert-btn" id="liveAlertBtn">Unlock New Features</button>
+    </div>
+
+
+    <script>
+const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+
+const alert = (message, type) => {
+  const wrapper = document.createElement('div')
+  wrapper.innerHTML = [
+    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+    `   <div>${message}</div>`,
+    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+    '</div>'
+  ].join('')
+
+  alertPlaceholder.append(wrapper)
+}
+
+const alertTrigger = document.getElementById('liveAlertBtn')
+if (alertTrigger) {
+  alertTrigger.addEventListener('click', () => {
+    alert('<li> Now you can play with multiple players</li> <li> You can also play with Computer bot</li><li> You can create a family of players to participate in competitions</li>')
+  })
+}
+      </script>
   </body>
-</html>
+    </html>
+    
