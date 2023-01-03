@@ -122,12 +122,42 @@ body {
   cursor: pointer;
 }
 .content {
-  left: 10rem;
+  /* left: 10rem;
   margin-top: 20px;
   margin-left: 280px;
   padding: 50px 16px;
   height: 1000px;
+  overflow: hidden; */
+}
+
+.content {
+  /* left: 8rem; */
+  margin-top: 5em;
+  margin-left: 20em;
+  /* padding: 2em 1em; */
+  /* height: 1000px; */
   overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 1em 0.5em;
+  /* grid: 10%; */
+  flex-direction: row;
+  /* background-color: antiquewhite; */
+}
+.card-image {
+  /* width: 2rem;
+  padding: 0.5em;
+  margin: 0.5em;
+  margin-right: 1em; */
+}
+.card img {
+  width: 10rem;
+  height: 10rem;
+  padding-left: 2em;
+  padding-top: 0.5em;
+  margin-left: 3em;
+  /* background-color: #04aa6d; */
 }
 
 /* MEDIA QUERIES FOR RESPONSIVENESS */

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <link rel="stylesheet" href="/pagestyle/home.css" />
+    <link rel="stylesheet" href="/pagestyle/spin.css" />
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
@@ -212,21 +212,47 @@
 </header>
   <div class="content">
     
-    <p>Here is a quote from WWF's website:</p>
-      
-      <blockquote cite="http://www.worldwildlife.org/who/index.html">
-        For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
-      </blockquote>
+   <!-- https://jamesrwilliams.ca/posts/css-wheel-of-fortune -->
+<div class="container">
+	<div class="board">
+		<div class="spinner-table"> 
+			<div class="dial">
+				<div class="slice"><div class="label">React Card</div></div>
+				<div class="slice"><div class="label">Card Key</div></div>
+				<div class="slice"><div class="label">Bonus Card</div></div>
+				<div class="slice"><div class="label">Master Card</div></div>
+				<div class="slice"><div class="label">Extra Turn</div></div>
+				<div class="slice"><div class="label">Super Card</div></div>
+				<div class="slice"><div class="label">Magic Key</div></div>
+				<div class="slice"><div class="label">Enable Key</div></div>
+				<div class="slice"><div class="label">UnFlip Key</div></div>
+				<div class="slice"><div class="label">Cash back</div></div>
+				<div class="slice"><div class="label">10 Dollar</div></div>
+				<div class="slice"><div class="label">Extra Spin</div></div>
+			</div>
+		</div>
+		<div class="arrow">
+			<span class="pointer"></span>
+		</div>
+	</div>
+	
+	<div class="content-container">
+		<div class="pre">
+			<button id="spin">Spin</button>
+		</div>
+	</div>
+
+	
+</div>
     </div>
     <script>
-      function myFunction() {
-        var x = document.getElementById("nav");
-        if (x.className === "nav") {
-          x.className += " responsive";
-        } else {
-          x.className = "nav";
-        }
-      }
+ const spinButton = document.getElementById('spin');
+const dial = document.querySelector('.dial');
+
+spinButton.addEventListener('click', () => {
+	dial.classList.toggle("spinning");
+	document.querySelector('content-container').classList.toggle('activated');
+});
       </script>
   </body>
     </html>
