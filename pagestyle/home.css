@@ -100,20 +100,24 @@ body {
   color: #b72020;
 }
 .sidebar {
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
   margin-top: 22px;
-  /* margin: 0; */
+
   padding: 0;
-  width: 200px;
-  /* background-color: #f1f1f1; */
+  width: 20em;
+
   position: fixed;
   height: 100%;
   overflow: auto;
 }
 .sidebar a {
-  display: block;
+  display: inline-flexbox;
+  grid-template-rows: subgrid;
+  flex-direction: column;
+  position: relative;
   color: black;
+  width: 100%;
   padding: 16px;
   text-decoration: none;
 }

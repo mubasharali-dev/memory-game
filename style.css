@@ -379,4 +379,119 @@ video {
 }
 
 @media only screen and (max-width: 992px) and (min-width: 769px) {
+  .memory-game {
+    padding-top: 4em;
+    width: 42em;
+    height: 52em;
+    margin-top: 10em;
+    margin: auto;
+    padding: 2em;
+    clear: both;
+    margin-left: 0px;
+  }
+  .memory-card {
+    width: calc(16% - 10px);
+    height: calc(22% - 10px);
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+  }
+
+  .memory-card:active {
+    transform: scale(0.97);
+    transition: transform 0.2s;
+  }
+
+  .front-face,
+  .back-face {
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    position: absolute;
+    border-radius: 4px;
+    background: #e7e2e2;
+    backface-visibility: hidden;
+    background-color: rgb(17, 30, 223);
+  }
+  #menubar {
+    padding-right: 10px;
+    background-color: red;
+    outline: none;
+    display: block;
+  }
+  .navbar-brand img {
+    margin-right: 15.6rem;
+  }
+  .navbar-brand h4 {
+    font-size: 1.2rem;
+    display: block;
+    position: absolute;
+    margin-right: 5px;
+    margin-right: clamp(500px, 4vw, 20%);
+  }
+  .login-pic {
+    position: relative;
+  }
+  .nav-item img {
+    position: sticky;
+    float: right;
+  }
+  .nav-link {
+    display: none;
+  }
+  .container-fluid p {
+    padding-left: 5px;
+    margin-left: 5px;
+    color: black;
+  }
+
+  .dropdown-content {
+    left: -280px;
+  }
+  .notification a {
+    position: sticky;
+    font-size: 12px;
+  }
+  .notification {
+    min-width: 260px;
+  }
+  .notification-heading {
+    padding-top: 10px;
+    padding-left: 15px;
+    margin-right: 12px;
+    color: rgb(17, 30, 223);
+    transform: scale(1);
+    font-size: 16px;
+  }
+  .right-sidebar {
+    right: 10em;
+    display: inline-flex;
+    position: absolute;
+    top: 53em;
+    margin-right: 10em + 5vw;
+    width: 100%;
+  }
+  .lead {
+    padding: 0.5em;
+    margin-left: 0.4em;
+  }
+  .content {
+    margin-left: 1em;
+  }
+  video {
+    width: 25em;
+    height: 15em;
+    padding: 0.4em;
+    border: 3px solid blue;
+  }
+  .content h5 {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px;
+  }
+  .play-guide {
+    padding: 4px;
+    width: 400px;
+  }
 }
