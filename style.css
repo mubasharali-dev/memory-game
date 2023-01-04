@@ -197,8 +197,8 @@ video {
 @media only screen and (max-width: 600px) {
   .memory-game {
     padding-top: 100px;
-    width: 470px;
-    height: 600px;
+    width: 40em;
+    height: 50em;
     margin: auto;
     margin-right: -5px;
     padding-right: 10px;
@@ -245,9 +245,9 @@ video {
     display: block;
     position: absolute;
     font-size: 14px;
-    margin-right: 5px;
+    margin-right: 44em;
     margin-left: 500px;
-    margin-bottom: 110px;
+    /* margin-bottom: 110px; */
   }
   .login-pic {
     position: relative;
@@ -283,4 +283,100 @@ video {
     transform: scale(1);
     font-size: 16px;
   }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 601px) {
+  .memory-game {
+    padding-top: 100px;
+    width: 47em;
+    height: 60em;
+    margin: auto;
+    margin-right: 0.2rem;
+    padding-right: 0.5em;
+  }
+  .memory-card {
+    width: calc(16% - 10px);
+    height: calc(22% - 10px);
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+  }
+
+  .memory-card:active {
+    transform: scale(0.97);
+    transition: transform 0.2s;
+  }
+
+  .front-face,
+  .back-face {
+    width: 100%;
+    height: 100%;
+    padding: 1.2em;
+    position: absolute;
+    border-radius: 4px;
+    background: #e7e2e2;
+    backface-visibility: hidden;
+    background-color: rgb(17, 30, 223);
+  }
+  #menubar {
+    padding-right: 10px;
+    background-color: red;
+    outline: none;
+    display: block;
+  }
+
+  .content {
+    display: none;
+  }
+  .navbar-brand img {
+    margin-right: 15.6rem;
+  }
+  .navbar-brand h4 {
+    font-size: 1.2rem;
+    display: block;
+    position: absolute;
+    /* font-size: 14px; */
+    margin-right: 5px;
+    /* margin-left: 500px; */
+    /* margin-bottom: 110px; */
+    margin-right: clamp(500px, 4vw, 20%);
+  }
+  .login-pic {
+    position: relative;
+  }
+  .nav-item img {
+    position: sticky;
+    float: right;
+  }
+  .nav-link {
+    display: none;
+  }
+  .container-fluid p {
+    padding-left: 5px;
+    margin-left: 5px;
+    color: black;
+  }
+
+  .dropdown-content {
+    left: -280px;
+  }
+  .notification a {
+    position: sticky;
+    font-size: 12px;
+  }
+  .notification {
+    min-width: 260px;
+  }
+  .notification-heading {
+    padding-top: 10px;
+    padding-left: 15px;
+    margin-right: 12px;
+    color: rgb(17, 30, 223);
+    transform: scale(1);
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 769px) {
 }
